@@ -18,8 +18,6 @@ public class GlobalErrorHandler {
     {
         Map<String, String> errorList = new HashMap<>();
         for(FieldError error : ex.getFieldErrors()) {
-
-
             String err_name = error.getField();
             String err_message = error.getDefaultMessage();
             errorList.put(err_name, err_message);
